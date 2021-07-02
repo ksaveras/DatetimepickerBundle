@@ -115,7 +115,7 @@ class DatetimeType extends AbstractType
     {
         $intlToMalot = array_combine(self::$intlFormater, self::$malotFormater);
 
-        $patterns = preg_split('([\\\/.:_;,\s-\ ]{1})', $formatter);
+        $patterns = preg_split('([\\\/.:_;,\s-]{1})', $formatter);
         $exits = array();
 
         foreach ($patterns as $val) {
@@ -137,7 +137,7 @@ class DatetimeType extends AbstractType
     {
         $malotToIntl = array_combine(self::$malotFormater, self::$intlFormater);
 
-        $patterns = preg_split('([\\\/.:_;,\s-\ ]{1})', $formatter);
+        $patterns = preg_split('([\\\/.:_;,\s- ]{1})', $formatter);
         $exits = array();
 
         foreach ($patterns as $val) {
