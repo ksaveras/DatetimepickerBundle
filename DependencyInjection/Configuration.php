@@ -16,8 +16,8 @@ class Configuration implements ConfigurationInterface
      */
     public function getConfigTreeBuilder()
     {
-        $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('stephane_collot_datetimepicker');
+        $treeBuilder = new TreeBuilder('stephane_collot_datetimepicker');
+        $rootNode = $treeBuilder->getRootNode();
 
         $this->addPicker($rootNode);
 

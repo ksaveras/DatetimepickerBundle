@@ -15,9 +15,14 @@ Add the following dependency to your composer.json file:
 ``` json
 {
     "require": {
-
         "stephanecollot/datetimepicker-bundle": "dev-master"
-    }
+    },
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/ksaveras/DatetimepickerBundle.git"
+        }
+    ],
 }
 ```
 

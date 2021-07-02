@@ -19,7 +19,6 @@ use Symfony\Component\OptionsResolver\OptionsResolver;
 
 /**
 * DatetimeType
-*
 */
 class DatetimeType extends AbstractType
 {
@@ -161,7 +160,7 @@ class DatetimeType extends AbstractType
     {
         return \Symfony\Component\Form\Extension\Core\Type\DateTimeType::class;
     }
-    
+
     public function getName()
     {
         return $this->getBlockPrefix();
